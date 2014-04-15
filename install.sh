@@ -233,3 +233,26 @@ cp /tmp/logstash/patterns/* /etc/logstash/patterns/
 
 # Restart logstash service
 service logstash restart
+
+
+
+#insttall kibana 3
+cd /var/www
+#wget https://download.elasticsearch.org/kibana/kibana/kibana-3.0.0milestone4.tar.gz
+wget https://download.elasticsearch.org/kibana/kibana/kibana-3.0.0milestone5.tar.gz
+tar zxvf kibana-*
+rm kibana-*.tar.gz
+mv kibana-* kibana
+
+
+
+
+# All Done
+echo "Installation has completed!!"
+echo -e "Connect to ${red}http://$yourfqdn/kibana${NC} or ${red}http://$IPADDY/kibana${NC}"
+echo "${yellow}EveryThingShouldBeVirtual.com${NC}"
+echo "${yellow}@mrlesmithjr${NC}"
+echo "${yellow}Enjoy!!!${NC}"
+
+
+
